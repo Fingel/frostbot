@@ -1,0 +1,7 @@
+{
+    "commandPrefix": "!",
+    "welcomeChannel": "welcome-mat",
+    "pugChannel": "PUGs",
+    "owners": ["508486008493572096", "576660452881334272"],
+    "officers": ["508486008493572096", "576660452881334272"]
+}

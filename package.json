@@ -1,0 +1,35 @@
+{
+  "name": "frostbot",
+  "version": "0.0.1",
+  "description": "A very sweaty chat bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fingel/frostbot.git"
+  },
+  "keywords": [
+    "discord",
+    "chat",
+    "bot",
+    "wow",
+    "classic"
+  ],
+  "author": "Austin Riba <austin@m51.io>",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Fingel/frostbot/issues"
+  },
+  "homepage": "https://github.com/Fingel/frostbot#readme",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "discord.js-commando": "github:discordjs/Commando",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "eslint": "^6.8.0"
+  }
+}
