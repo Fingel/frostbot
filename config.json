@@ -2,6 +2,9 @@
     "commandPrefix": "!",
     "welcomeChannel": "welcome-mat",
     "pugChannel": "PUGs",
+    "guildId": "703469007528919161",
     "owners": ["508486008493572096", "576660452881334272"],
-    "officers": ["508486008493572096", "576660452881334272"]
+    "roles": {
+        "officer": "703469007528919166"
+    }
 }

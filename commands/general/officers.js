@@ -23,8 +23,9 @@ module.exports = class OfficersCommand extends Command {
   }
 
   run(message, {offline}){
-    for(let userId of config.officers){
-      let user = this.client.users.cache.find(u => u.id === userId)
+    const guild = this.client.guilds.cache.find(guild => guild.id === config.guildId)
+    const role = guild.roles.cache.find(role => role.id === config.roles.officer)
+    for(let user of role.members.map(m => m.user)){
       if(user.presence.status === 'online' || offline === 'offline'){
 
         let officerEmbed = new Discord.MessageEmbed()

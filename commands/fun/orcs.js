@@ -6,7 +6,7 @@ module.exports = class OrcCommand extends Command {
     super(client, {
       name: 'orc',
       aliases: ['orcs'],
-      patterns: [new RegExp('.*orc.*', 'i')],
+      patterns: [new RegExp(' {1}orc[s.]?', 'ig')],
       group: 'fun',
       memberName: 'orcs',
       description: 'What FrostBot really thinkgs of orcs.',
