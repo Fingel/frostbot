@@ -27,13 +27,12 @@ module.exports = class OfficersCommand extends Command {
     const role = guild.roles.cache.find(role => role.id === config.roles.officer)
     for(let user of role.members.map(m => m.user)){
       if(user.presence.status === 'online' || offline === 'offline'){
-
+        const statusPrefix = user.presence.status === 'online' ? '✅' : '🚫'
         let officerEmbed = new Discord.MessageEmbed()
           .setTitle(`${user.username}`)
           .setDescription(`${user}`)
           .setThumbnail(user.displayAvatarURL())
-          .addField('Rank', 'Grunt')
-          .addField('Status', user.presence.status)
+          .addField('Status', `${statusPrefix} ${user.presence.status}`)
 
         message.say(officerEmbed)
       }
