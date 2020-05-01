@@ -10,22 +10,22 @@ if(process.env.NODE_ENV != 'production'){
 
 const client = new CommandoClient({
   commandPrefix: config.commandPrefix,
-	owner: config.owners
+  owner: config.owners
 });
 
 client.registry
-	.registerDefaultTypes()
-	.registerGroups([
-		['general', 'General commands'],
+  .registerDefaultTypes()
+  .registerGroups([
+    ['general', 'General commands'],
     ['fun', 'Commands for fun'],
-	])
-	.registerDefaultGroups()
-	.registerDefaultCommands()
-	.registerCommandsIn(path.join(path.resolve(), 'commands'));
+  ])
+  .registerDefaultGroups()
+  .registerDefaultCommands()
+  .registerCommandsIn(path.join(path.resolve(), 'commands'));
 
 client.once('ready', () => {
-	logger.info(`Logged in as ${client.user.tag}! (${client.user.id})`);
-	client.user.setActivity('Fingel\'s Keyboard');
+  logger.info(`Logged in as ${client.user.tag}! (${client.user.id})`);
+  client.user.setActivity('Fingel\'s Keyboard');
 });
 
 client.on('error', (e) => {

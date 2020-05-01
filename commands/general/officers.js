@@ -3,13 +3,13 @@ const Discord = require('discord.js');
 const config = require('../../config.json');
 
 module.exports = class OfficersCommand extends Command {
-	constructor(client) {
-		super(client, {
-			name: 'officers',
-			aliases: ['officers'],
-			group: 'general',
-			memberName: 'officers',
-			description: 'List Guild Officers. Use `officers offline` to display offline officers as well.',
+  constructor(client) {
+    super(client, {
+      name: 'officers',
+      aliases: ['officers'],
+      group: 'general',
+      memberName: 'officers',
+      description: 'List Guild Officers. Use `officers offline` to display offline officers as well.',
       args: [
         {
           key: 'offline',
@@ -19,8 +19,8 @@ module.exports = class OfficersCommand extends Command {
           ofOf: ['offline', 'online']
         }
       ]
-		});
-	}
+    });
+  }
 
   run(message, {offline}){
     for(let userId of config.officers){
