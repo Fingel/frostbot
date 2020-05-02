@@ -7,7 +7,9 @@ function guildMemberAdd(member){
   if(!channel) return;
   channel.send(`Welcome to the Frostwolves' Den, ${member}! I've sent you a DM with more info.`);
   member.send(
-    'Welcome to the Frostwolf Militia! Please be kind a courteous when interacting on our server. ' +
+    'Welcome to the Frostwolf Militia! Make sure to download the Group Calendar for our ' +
+    'guild\'s in-game calendar. In addition we do a lot of socializing and planning for ' +
+    'events on discord so make sure to check the #events and #guild-chat channels when you can. ' +
     'Strength! 💪'
   )
   member.send(
