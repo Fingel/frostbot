@@ -30,7 +30,7 @@ module.exports = class JoinFrostwolf extends Command {
     const member = guild.members.cache.find(member => member.id === message.author.id)
     if(password === config.guildInvitePassword && member){
       logger.info(`Adding user ${member} to ${role}`)
-      //member.roles.add(role)
+      member.roles.add(role)
       message.reply('Welcome to the militia!')
     }else{
       message.reply('Invalid password')

@@ -19,6 +19,6 @@ module.exports = class SlapCommand extends Command {
   }
 
   run(message, {user}){
-    return message.say(`*slaps ${user} in the face*`)
+    return message.say(`*slaps ${user} around a bit with a wet Longjaw Mud Snapper*`)
   }
 };

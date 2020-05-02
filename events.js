@@ -15,7 +15,7 @@ function guildMemberAdd(member){
   )
   member.send(
     'Are you interested in learning more about joining the militia? Please DM one of the ' +
-    'online officers by typing **!officers**'
+    'online officers by typing **!officers** or if none are online **!officers offline**.'
   )
 }
 
