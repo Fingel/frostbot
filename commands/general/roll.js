@@ -20,7 +20,7 @@ module.exports = class RollCommand extends Command {
   }
 
   run(message, {number}){
-    const num = Math.floor(Math.random() * (number + 1))
+    const num = Math.floor(Math.random() * number + 1)
     const user = message.author
     return message.say(`${user} rolled ${num}`)
   }

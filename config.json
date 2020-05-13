@@ -1,7 +1,7 @@
 {
     "commandPrefix": "!",
     "welcomeChannel": "welcome-mat",
-    "pugChannel": "PUGs",
+    "pugChannel": "PUG 1",
     "guildInvitePassword": "froststrong",
     "anvilPassword": "surgical",
     "hammerPassword": "hammertime",

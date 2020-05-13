@@ -32,7 +32,6 @@ module.exports = class JoinFrostwolf extends Command {
     if(password === config.guildInvitePassword && member){
       logger.info(`Adding user ${member} to ${role}`)
       member.roles.add(role)
-      message.reply('Welcome to the militia!')
       fs.readFile('./templates/joinfrostwolf.txt', 'utf8', (err, data) =>{
         if(err){
           logger.error('could not read file')

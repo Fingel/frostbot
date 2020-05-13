@@ -31,7 +31,6 @@ module.exports = class JoinAnvil extends Command {
     if(password === config.anvilPassword && member){
       logger.info(`Adding user ${member} to ${role}`)
       member.roles.add(role)
-      message.reply('Welcome to the Anvil!')
       fs.readFile('./templates/joinanvil.txt', 'utf8', (err, data) =>{
         if(err){
           logger.error('could not read file')
