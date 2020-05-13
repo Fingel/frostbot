@@ -3,14 +3,13 @@ const config = require('../../config.json');
 const logger = require('../../logger')
 const fs = require('fs')
 
-module.exports = class JoinFrostwolf extends Command {
+module.exports = class JoinHammer extends Command {
   constructor(client) {
     super(client, {
-      name: 'joinfrostwolf',
-      aliases: ['joinfw'],
+      name: 'joinhammer',
       group: 'general',
-      memberName: 'joinfrostwolf',
-      description: 'Join Frostwolf Miltia with the secret code.',
+      memberName: 'joinhammer',
+      description: 'Join The Hammer with a secret code',
       args: [
         {
           key: 'password',
@@ -27,20 +26,20 @@ module.exports = class JoinFrostwolf extends Command {
       message.delete()
     }
     const guild = this.client.guilds.cache.find(guild => guild.id === config.guildId)
-    const role = guild.roles.cache.find(role => role.id === config.roles.member)
+    const role = guild.roles.cache.find(role => role.id === config.roles.hammer)
     const member = guild.members.cache.find(member => member.id === message.author.id)
-    if(password === config.guildInvitePassword && member){
+    if(password === config.hammerPassword && member){
       logger.info(`Adding user ${member} to ${role}`)
       member.roles.add(role)
-      message.reply('Welcome to the militia!')
-      fs.readFile('./templates/joinfrostwolf.txt', 'utf8', (err, data) =>{
+      message.reply('Welcome to the Hammer!')
+      fs.readFile('./templates/joinhammer.txt', 'utf8', (err, data) =>{
         if(err){
           logger.error('could not read file')
         }
         message.author.send(data)
       })
     }else{
-      member.send('Invalid password')
+      message.reply('Invalid password')
     }
   }
 };

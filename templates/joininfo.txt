@@ -1,0 +1,8 @@
+If you are ready to join the ranks of the Frostwolf Militia, please type **!joinfrostwolf <password>**.
+
+If you are *NOT* a member of the <Frostwolf Militia> but are joining one of our associated raid teams, you can type the following:
+
+For the Avil Raid Team: **!joinavil <password>**
+
+For the Hammer Raid Team: **!joinhammer <password>**
+
