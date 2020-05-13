@@ -5,12 +5,12 @@
     "guildInvitePassword": "froststrong",
     "anvilPassword": "surgical",
     "hammerPassword": "hammertime",
-    "guildId": "703469007528919161",
+    "guildId": "439119275748360212",
     "owners": ["508486008493572096", "576660452881334272"],
     "roles": {
-        "officer": "703469007528919166",
-        "member": "703469007528919165",
-        "anvil": "703469007528919163",
-        "hammer": ""
+        "officer": "590024586108600320",
+        "member": "610252395250712587"
+        "anvil": "646103108111564840",
+        "hammer": "707640637897572374"
     }
 }
