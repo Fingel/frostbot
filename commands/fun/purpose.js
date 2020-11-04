@@ -14,7 +14,7 @@ module.exports = class PurposeCommand extends Command {
 
   run(message){
     if(message.author.id === '508486008493572096'){
-      message.say('My purpose is to death roll.')
+      message.say('My purpose is to deathroll.')
     }
   }
 };
